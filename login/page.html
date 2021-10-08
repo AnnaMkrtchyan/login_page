@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canned replies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header position-fixed">
+        <div class="d-flex justify-content-end align-items-center">
+            <a href="#">
+                <img src="img/page/user.png" alt="logo" class="img-fluid"/>
+            </a>
+            <h4 class="header__username fs-18px">User Name</h4>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="fixed-section position-fixed d-flex flex-wrap align-content-between">
+            <div>
+                <div>
+                    <a href="#" class="d-inline-block mb-5">
+                        <img src="img/page/logo.png" alt="logo" class="img-logo"/>
+                    </a>
+                    <a href="#" class="btn create-new-btn fs-20px">+&nbsp;&nbsp;New Project</a>
+                </div>
+                <div>
+                    <div class="fixed-section-item before-content position-relative text-white mb-3">
+                        <h4 class="fs-18px fw-normal mb-1">Web</h4>
+                        <p class="fs-14px fw-light">4 Conversation</p>
+                    </div>
+                    <div class="fixed-section-item text-white">
+                        <h4 class="fs-18px fw-normal mb-1">Project 2</h4>
+                        <p class="fs-14px fw-light">15 Conversation</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="settings.html" class="d-inline-block btn-settings">
+                    <img src="img/page/settings.png" alt="settings" class="img-fluid"/>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main__tab">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="replies-tab" data-bs-toggle="tab" data-bs-target="#replies" type="button" role="tab" aria-controls="replies" aria-selected="false">Canned Replies</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="widget-tab" data-bs-toggle="tab" data-bs-target="#widget" type="button" role="tab" aria-controls="widget" aria-selected="true">Get Widget</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="invite-tab" data-bs-toggle="tab" data-bs-target="#invite" type="button" role="tab" aria-controls="invite" aria-selected="true">Invite Users</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="automation-tab" data-bs-toggle="tab" data-bs-target="#automation" type="button" role="tab" aria-controls="automation" aria-selected="true">Automation</button>
+                    </li>
+                </ul>
+                <div class="tab-content main-tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="replies" role="tabpanel" aria-labelledby="replies-tab">
+                        <div class="replies-block">
+                            <div class="replies-block__div d-flex">
+                                <div class="replies-block__left">
+                                    <a href="#" class="btn new-reply-btn fs-20px d-inline-block text-center mb-1">+  New Reply </a>
+                                    <p class="reply-text mb-5">Create new Canned Reply</p>
+                                    <div class="text-block">
+                                        <h5 class="mb-1"># hitest</h5>
+                                        <p>Hi, How are you?</p>
+                                    </div>
+                                </div>
+                                <div class="inserted-tabs">
+                                    <nav>
+                                        <div class="nav nav-tabs mb-5" id="nav-tab" role="tablist">
+                                            <button class="nav-link" id="nav-phrase-tab" data-bs-toggle="tab" data-bs-target="#nav-phrase" type="button" role="tab" aria-controls="nav-phrase" aria-selected="true">Phrase</button>
+                                            <button class="nav-link active" id="nav-access-tab" data-bs-toggle="tab" data-bs-target="#nav-access" type="button" role="tab" aria-controls="nav-access" aria-selected="false">Access URL</button>
+                                            <button class="nav-link" id="nav-timer-tab" data-bs-toggle="tab" data-bs-target="#nav-timer" type="button" role="tab" aria-controls="nav-timer" aria-selected="false">Timer</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade" id="nav-phrase" role="tabpanel" aria-labelledby="nav-home-phrase">
+                                            <div>
+                                                <div class="custom-input mb-5">
+                                                    <input class="custom-input__input" id="" type="text" placeholder=" ">
+                                                    <label class="custom-input__placeholder fs-14px">Trigger</label>
+                                                </div>
+                                                <div class="custom-textarea mt-3">
+                                                    <textarea class="custom-textarea__textarea" placeholder=" "></textarea>
+                                                    <label class="custom-textarea__placeholder">Replacement</label>
+                                                </div>
+                                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Save</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade show active" id="nav-access" role="tabpanel" aria-labelledby="nav-access-tab">
+                                            <div>
+                                                <div class="custom-input mb-5">
+                                                    <input class="custom-input__input" type="text" placeholder=" ">
+                                                    <label class="custom-input__placeholder fs-14px">To any user who accesses from URL</label>
+                                                </div>
+                                                <div class="custom-textarea mt-3">
+                                                    <textarea class="custom-textarea__textarea" placeholder=" "></textarea>
+                                                    <label class="custom-textarea__placeholder">Say Message</label>
+                                                </div>
+                                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Save</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-timer" role="tabpanel" aria-labelledby="nav-timer-tab">
+                                            <div class="mb-5">
+                                                <p style="color: #333065;">If</p>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="" class="btn btn-user d-inline-block fs-14px text-white mt-1 me-3">User</a>
+                                                    <p class="fs-14px">Support</p>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown mb-5">
+                                                <button class="btn dropdown-toggle fs-14px" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Doesn’t respond in</button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">5 Minutes</a></li>
+                                                    <li><a class="dropdown-item" href="#">5 Minutes</a></li>
+                                                    <li><a class="dropdown-item" href="#">5 Minutes</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="custom-textarea mb-5">
+                                                <textarea class="custom-textarea__textarea" placeholder=" "></textarea>
+                                                <label class="custom-textarea__placeholder">Say Message</label>
+                                            </div>
+                                            <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Save</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="widget" role="tabpanel" aria-labelledby="widget-tab">
+                        <div class="get-widget-block">
+                            <p class="get-widget-block__text mb-3">Chat Bote Color Scheme</p>
+                            <div class="colors-block d-flex justify-content-between mb-5">
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="item-text">Text</p>
+                                    <div class="item-color first-color"></div>
+                                    <div class="item-code text-center">#202020</div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="item-text">Text Conteiner</p>
+                                    <div class="item-color second-color"></div>
+                                    <div class="item-code text-center">#95A3A4</div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="item-text">Text Input</p>
+                                    <div class="item-color third-color"></div>
+                                    <div class="item-code text-center">#F8FAFB</div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="item-text">Text Input</p>
+                                    <div class="item-color fourth-color"></div>
+                                    <div class="item-code text-center">#04A777</div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="custom-input mb-4">
+                                    <input class="custom-input__input" id="inputid" type="text" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">Welcome Message</label>
+                                </div>
+                                <div class="custom-textarea mt-3 mb-5">
+                                    <textarea class="custom-textarea__textarea" placeholder=" "></textarea>
+                                    <label class="custom-textarea__placeholder">Embed Code</label>
+                                </div>
+                                <a href="#" class="btn btn-pink btn-save-copy text-white">Save & Copy to Clipboard</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="invite" role="tabpanel" aria-labelledby="invite-tab">
+                        <div class="invite-users-block">
+                            <div>
+                                <div>
+                                    <div class="text-center">
+                                        <a href="#" class="btn add-user-btn fs-20px d-inline-block text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">+  Add New User</a>
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="border-bottom-0 text-start">Name</th>
+                                            <th scope="col" class="border-bottom-0 text-start">Email</th>
+                                            <th scope="col" class="border-bottom-0 text-start">Project</th>
+                                            <th scope="col" class="border-bottom-0"></th>
+                                            <th scope="col" class="border-bottom-0"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tbody-name tbody-left-block fs-14px text-start">Narek Etibaryan</td>
+                                            <td class="tbody-left-block fs-14px text-start">narek.etibaryan@gmail.com</td>
+                                            <td class="tbody-left-block fs-14px text-start">WEB</td>
+                                            <td class="tbody-time text-end" >31/07/2017  16:13</td>
+                                            <td class="tbody-send text-end">
+                                                <a href="#" class="tbody-send__btn btn btn-pink d-inline-block text-white text-center">Send Again</a>
+                                            </td>
+                                            <td class="tbody-cancel text-end">
+                                                <a href="#" class="btn-light-grey btn d-inline-block text-white text-center">Cancel</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tbody-name tbody-left-block fs-14px text-start">Narek Etibaryan</td>
+                                            <td class="tbody-left-block fs-14px text-start">narek.etibaryan@gmail.com</td>
+                                            <td class="tbody-left-block fs-14px text-start">WEB</td>
+                                            <td class="tbody-time text-end" >31/07/2017  16:13</td>
+                                            <td class="tbody-send text-end">
+                                                <a href="#" class="tbody-send__btn btn btn-pink d-inline-block text-white text-center">Send Again</a>
+                                            </td>
+                                            <td class="tbody-cancel text-end">
+                                                <a href="#" class="btn-light-grey btn d-inline-block text-white text-center">Cancel</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="automation" role="tabpanel" aria-labelledby="automation-tab">
+                        <div class="automation-block">
+                            <div class="automation-block__header d-flex justify-content-end align-items-center">
+                                <div class="d-flex align-items-center" style="margin-right: 35px;">
+                                    <img src="img/page/automation/saved.svg" alt="save-icon" class="img-fluid"/>
+                                    <span class="save-text ms-2">Saved</span>
+                                </div>
+                                <div style="margin-right: 110px;">
+                                    <a href="#" class="after-block text-decoration-none position-relative">
+                                        <img src="img/page/automation/vector-left.svg" alt="left-vector" class="left-vector img-fluid" />
+                                    </a>
+                                    <a href="#" class="text-decoration-none ms-1">
+                                        <img src="img/page/automation/vector-right.svg" alt="right-vector" class="img-fluid" />
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-light-grey btn d-inline-block text-white text-center">Preview</a>
+                                    <a href="#" class="btn-pink btn d-inline-block text-white text-center">Publish</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="left-section">
+                                    <a href="#" class="btn btn-new-bot fs-20px d-inline-block mb-5">+  New Bot</a>
+                                    <div>
+                                        <div class="bot-block d-flex justify-content-between align-items-center mb-1">
+                                            <span class="bot-block__title"> Bot 1 </span>
+                                            <a href="#" class="d-inline-block">
+                                                <img src="img/page/automation/edit.svg" alt="edit-icon" />
+                                            </a>
+                                        </div>
+                                        <div class="bot-block d-flex justify-content-between align-items-center">
+                                            <span class="bot-block__title"> Bot 2 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- Modals-->
+    <div class="modal fade modal-settings" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">New User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <div class="custom-input">
+                        <input class="custom-input__input" type="text" placeholder=" ">
+                        <label class="custom-input__placeholder fs-14px">Name</label>
+                    </div>
+                    <div class="custom-input">
+                        <input class="custom-input__input" type="text" placeholder=" ">
+                        <label class="custom-input__placeholder fs-14px">Email</label>
+                    </div>
+                    <div class="custom-input">
+                        <input class="custom-input__input" type="text" placeholder=" ">
+                        <label class="custom-input__placeholder fs-14px">Project</label>
+                    </div>
+                    <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Save</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

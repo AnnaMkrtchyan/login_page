@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header position-fixed">
+        <div class="d-flex justify-content-end align-items-center">
+            <a href="#">
+                <img src="img/page/user.png" alt="user-img" class="img-fluid"/>
+            </a>
+            <h4 class="header__username fs-18px">User Name</h4>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="fixed-section position-fixed d-flex flex-wrap align-content-between">
+            <div>
+                <div>
+                    <a href="page.html" class="d-inline-block mb-5">
+                        <img src="img/page/logo.png" alt="logo" class="img-logo"/>
+                    </a>
+                    <a href="#" class="btn create-new-btn fs-20px">+&nbsp;&nbsp;New Project</a>
+                </div>
+                <div>
+                    <div class="fixed-section-item before-content position-relative text-white mb-3">
+                        <h4 class="fs-18px fw-normal mb-1">Web</h4>
+                        <p class="fs-14px fw-light">4 Conversation</p>
+                    </div>
+                    <div class="fixed-section-item text-white">
+                        <h4 class="fs-18px fw-normal mb-1">Project 2</h4>
+                        <p class="fs-14px fw-light">15 Conversation</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn-settings d-inline-block">
+                    <img src="img/page/settings.png" alt="settings-icon" class="img-fluid"/>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="settings-section">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="password-tab" data-bs-toggle="tab" data-bs-target="#password" type="button" role="tab" aria-controls="password" aria-selected="false">Password</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="chats-tab" data-bs-toggle="tab" data-bs-target="#chats" type="button" role="tab" aria-controls="chats" aria-selected="false">Chat Apps</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="auto-responders-tab" data-bs-toggle="tab" data-bs-target="#auto-responders" type="button" role="tab" aria-controls="auto-responders" aria-selected="false">Autoresponders</button>
+                    </li>
+                </ul>
+                <div class="tab-content main-tab-content">
+                    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h5 class="profile__name">Avatar</h5>
+                        <div class="profile__img mb-5">
+                            <div class="custom-file-upload">
+                                <div class="fileUpload btn btn--browse">
+                                    <span class="text-white">+</span>
+                                    <input id="uploadBtn" type="file" class="upload" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-input mb-5">
+                            <input class="custom-input__input form-control" type="text" placeholder=" ">
+                            <label class="custom-input__placeholder fs-14px">Name</label>
+                        </div>
+                        <div class="custom-input mb-5">
+                            <input class="custom-input__input form-control" type="email" placeholder=" ">
+                            <label class="custom-input__placeholder fs-14px">Email</label>
+                        </div>
+                        <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Save</a>
+                    </div>
+                    <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                        <div class="custom-input mb-5">
+                            <input class="custom-input__input form-control" type="password" placeholder=" ">
+                            <label class="custom-input__placeholder fs-14px">Current Password</label>
+                        </div>
+                        <div class="custom-input mb-5">
+                            <input class="custom-input__input form-control" type="password" placeholder=" ">
+                            <label class="custom-input__placeholder fs-14px">New Password</label>
+                        </div>
+                        <div class="custom-input mb-5">
+                            <input class="custom-input__input form-control" type="password" placeholder=" ">
+                            <label class="custom-input__placeholder fs-14px">Re - Type New Password</label>
+                        </div>
+                        <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Save</a>
+                    </div>
+                    <div class="tab-pane fade" id="chats" role="tabpanel" aria-labelledby="chats-tab">
+                        <div class="app-block d-flex">
+                            <img src="img/page/skype.png" alt="skype" />
+                            <div class="app-text d-flex flex-column justify-content-between">
+                                <span class="app-text__title">Skype</span>
+                                <a href="#" class="btn app-text__btn d-inline-block text-center">Disconnect</a>
+                            </div>
+                        </div>
+                        <div class="app-block d-flex">
+                            <img src="img/page/facebook-messenger.png" alt="facebook-messenger" />
+                            <div class="app-text d-flex flex-column justify-content-between">
+                                <span class="app-text__title">Facebook Messenger</span>
+                                <a href="#" class="btn app-text__btn d-inline-block text-center">Disconnect</a>
+                            </div>
+                        </div>
+                        <div class="app-block d-flex">
+                            <img src="img/page/slack.png" alt="slack" />
+                            <div class="app-text d-flex flex-column justify-content-between">
+                                <span class="app-text__title">Slack</span>
+                                <a href="#" class="btn app-text__btn d-inline-block text-center">Disconnect</a>
+                            </div>
+                        </div>
+                        <div class="app-block d-flex">
+                            <img src="img/page/whatsapp.png" alt="whatsapp" />
+                            <div class="app-text d-flex flex-column justify-content-between">
+                                <span class="app-text__title">Whatsapp</span>
+                                <a href="#" class="btn app-text__btn d-inline-block text-center">Disconnect</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="auto-responders" role="tabpanel" aria-label="auto-responders-tab">
+                        <div class="d-flex flex-column align-items-center scroll-div">
+                            <div class="responder-block mt-2">
+                                <div class="custom-input">
+                                    <input class="custom-input__input form-control pe-5" type="password" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">AWeber</label>
+                                    <img src="img/settings/input-icon1.svg" alt="input-icon" class="custom-input__icon" />
+                                </div>
+                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Connect</a>
+                            </div>
+                            <div class="responder-block">
+                                <div class="custom-input">
+                                    <input class="custom-input__input form-control pe-5" type="password" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">AWeber</label>
+                                    <img src="img/settings/input-icon1.svg" alt="input-icon" class="custom-input__icon" />
+                                </div>
+                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Connect</a>
+                            </div>
+                            <div class="responder-block">
+                                <div class="custom-input">
+                                    <input class="custom-input__input form-control pe-5" type="password" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">AWeber</label>
+                                    <img src="img/settings/input-icon1.svg" alt="input-icon" class="custom-input__icon" />
+                                </div>
+                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Connect</a>
+                            </div>
+                            <div class="responder-block">
+                                <div class="custom-input">
+                                    <input class="custom-input__input form-control pe-5" type="password" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">AWeber</label>
+                                    <img src="img/settings/input-icon1.svg" alt="input-icon" class="custom-input__icon" />
+                                </div>
+                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Connect</a>
+                            </div>
+                            <div class="responder-block">
+                                <div class="custom-input">
+                                    <input class="custom-input__input form-control pe-5" type="password" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">AWeber</label>
+                                    <img src="img/settings/input-icon1.svg" alt="input-icon" class="custom-input__icon" />
+                                </div>
+                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Connect</a>
+                            </div>
+                            <div class="responder-block">
+                                <div class="custom-input">
+                                    <input class="custom-input__input form-control pe-5" type="password" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">AWeber</label>
+                                    <img src="img/settings/input-icon1.svg" alt="input-icon" class="custom-input__icon" />
+                                </div>
+                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Connect</a>
+                            </div>
+                            <div class="responder-block" >
+                                <div class="custom-input">
+                                    <input class="custom-input__input form-control pe-5" type="password" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">AWeber</label>
+                                    <img src="img/settings/input-icon1.svg" alt="input-icon" class="custom-input__icon" />
+                                </div>
+                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Connect</a>
+                            </div>
+                            <div class="responder-block">
+                                <div class="custom-input">
+                                    <input class="custom-input__input form-control pe-5" type="password" placeholder=" ">
+                                    <label class="custom-input__placeholder fs-14px">AWeber</label>
+                                    <img src="img/settings/input-icon1.svg" alt="input-icon" class="custom-input__icon" />
+                                </div>
+                                <a href="#" class="btn btn-pink sign-in-btn d-inline-block text-white">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
